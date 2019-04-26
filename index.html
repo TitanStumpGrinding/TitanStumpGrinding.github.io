@@ -92,6 +92,27 @@ body {
   transform: translate(-50%, -50%);
   color: white;
 }
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
 </style>
 
 
@@ -111,13 +132,13 @@ body {
   </div>
   
   <div class="column">
-    <h2><i><center>Services</center></i></h2>
+    <h2><i><center>Services</center><i></h2>
     <p>We proudly offer just one service at this time, simply because it is our expertise. We provide top tier stump grinding that will rid your yard or property of any stump, there isnt a stump out there we cannot remove. We offer residential services for those who are interested in removing unsightly stumps from their property to increase property appeal. We also offer commercial and lot clearing services. Whether you have one stump you need removed or too many to count, Titan Stump Grinding is the company to call.</p>
   </div>
   
   <div class="column">
-    <h2><i><center>Areas</center></i></h2>
-    <p>While we are based in Ravensdale, Washington, we proudly offer our services to the entirety of Washington State.</p>
+    <h2><i><center>Areas</center><i></h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
   </div>
 </div>
   
